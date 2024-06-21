@@ -29,10 +29,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://canine.tools/css/main.css">
+        <link rel="stylesheet" href="https://canine.tools/css/responsive.css">
         <script defer src="https://data.hyper.lol/script.js" data-website-id="d74f8d2d-de99-4ae6-af12-a368f9c8f474"></script>
     </head><body>
         <div class="center-content">
-            <img src="https://canine.tools/images/wolf.svg" alt="Wolf" width="20%" />
+            <img src="https://canine.tools/images/wolf.svg" alt="Wolf" class="logo" />
             <h1>You've Been Blocked</h1>
             <p>sadly, your download has been blocked. the website you were using is abusing our free api.</p>
             <h2>what does this mean?</h2>
@@ -40,6 +41,13 @@
             <p>it's not fair to profit from free software.</p>
             <h2>what should I do?</h2>
             <p>please use the <strong><a href="https://cobalt.tools">official site</a></strong> to download media & <strong><a href="https://boosty.to/wukko/donate">support the developers</a></strong>.</p>
+            <br>
+            <p><small>you will be redirected in 30 seconds...</small></p>
         </div>
     </body>
+    <script>
+        setTimeout(() => {
+            window.location.href = "https://cobalt.tools";
+        }, 30000);
+    </script>
 </html>
